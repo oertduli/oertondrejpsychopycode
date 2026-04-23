@@ -1,0 +1,7 @@
+condition,airship_type,trial_number,trial_in_condition,colour,true_mean,outcome
+Full,stable,1,1,Blue,60,59.56234413
+Full,stable,2,2,Blue,60,65.08547432
+Partial,volatile,41,1,Yellow,56.72149292,54.73537246
+Partial,volatile,42,2,Yellow,62.2602929,67.03061757
+None,volatile,81,1,Purple,63.79569188,63.511058
+None,stable,82,2,Orange,60,60.73747732
