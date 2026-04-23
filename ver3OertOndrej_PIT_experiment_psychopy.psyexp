@@ -89,7 +89,7 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Py" valType="str" updates="None" name="Code Type"/>
-        <Param val="if defaultKeyboard.getKeys(keyList=['space']):&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="from psychopy import event&amp;#10;&amp;#10;if 'space' in event.getKeys(keyList=['space']):&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="keys = welcomeKey.getKeys(keyList=['space'], waitRelease=False)&amp;#10;&amp;#10;if len(keys):&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
@@ -703,11 +703,11 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Py" valType="str" updates="None" name="Code Type"/>
-        <Param val="keys = defaultKeyboard.getKeys(keyList=['y', 'n'], waitRelease=False)&amp;#10;&amp;#10;if len(keys):&amp;#10;    keyName = keys[-1].name&amp;#10;&amp;#10;    if keyName == 'y':&amp;#10;        pay = 1&amp;#10;    elif keyName == 'n':&amp;#10;        pay = 0&amp;#10;&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="from psychopy import event&amp;#10;&amp;#10;keys = event.getKeys(keyList=['y', 'n'])&amp;#10;&amp;#10;if len(keys):&amp;#10;    keyName = keys[-1]&amp;#10;&amp;#10;    if keyName == 'y':&amp;#10;        pay = 1&amp;#10;    elif keyName == 'n':&amp;#10;        pay = 0&amp;#10;&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="keys = payKey.getKeys(keyList=['y', 'n'], waitRelease=False)&amp;#10;&amp;#10;if len(keys):&amp;#10;    keyName = keys[-1].name&amp;#10;&amp;#10;    if keyName == 'y':&amp;#10;        pay = 1&amp;#10;    elif keyName == 'n':&amp;#10;        pay = 0&amp;#10;&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="if ((payKey.keys === &quot;y&quot;)) {&amp;#10;    pay = 1;&amp;#10;} else {&amp;#10;    pay = 0;&amp;#10;}&amp;#10;psychoJS.experiment.addData(&quot;pay&quot;, pay);&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
         <Param val="if 'pay' not in locals():&amp;#10;    pay = 0&amp;#10;&amp;#10;thisExp.addData('pay', pay)" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="payCode" valType="code" updates="None" name="name"/>
